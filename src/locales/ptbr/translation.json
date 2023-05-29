@@ -1,0 +1,54 @@
+{
+  "helmetDefaultTitle": "Minha IDE Java",
+  "components": {
+    "editorBar": {
+      "applicationName": "Minha IDE Java"
+    },
+    "promiseModal": {
+      "buttonCancelLabel": "Cancelar",
+      "buttonConfirmLabel": "Confirmar"
+    }
+  },
+  "pages": {
+    "editorPage": {
+      "features": {
+        "configurations": {
+          "sectionEditor": "Editor de Texto",
+          "fontSizeLabel": "Tamanho da Fonte",
+          "textEditorThemeLabel": "Tema do Editor",
+          "tabSizeLabel": "Tamanho da Tabulação",
+          "sectionIde": "Interface de Desenvolvimento",
+          "modeLabel": "Modo",
+          "languageLabel": "Idioma",
+          "showLineNumbersLabel": "Exibir Números das Linhas",
+          "mode": {
+            "light": "Foco",
+            "dark": "Leitura"
+          }
+        },
+        "editor": {
+          "placeholder": "Escolha um arquivo e bom hack :D"
+        },
+        "treeview": {
+          "projectLabel": "Projeto",
+          "components": {
+            "deleteFileModal": {
+              "title": "Você tem certeza?",
+              "content": "Confirmando, o arquivo será excluído definitivamente!"
+            }
+          }
+        }
+      },
+      "helmetTitle": "Editor"
+    }
+  },
+  "pluguins": {
+    "axios": {
+      "error": {
+        "internal": {
+          "message": "Ocorreu um erro inexperado"
+        }
+      }
+    }
+  }
+}

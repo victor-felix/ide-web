@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "11.11.0",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.11.16",
+    "@mui/lab": "5.0.0-alpha.131",
+    "@mui/material": "5.13.2",
     "@reduxjs/toolkit": "1.8.5",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
@@ -19,6 +24,8 @@
     "@types/testing-library__jest-dom": "^5.14.5",
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.18.0",
+    "ace-builds": "1.22.0",
+    "axios": "1.4.0",
     "chalk": "4.1.2",
     "cross-env": "7.0.3",
     "eslint-config-prettier": "8.5.0",
@@ -33,14 +40,18 @@
     "inquirer-directory": "2.2.0",
     "jest-styled-components": "7.1.1",
     "lint-staged": "13.0.3",
+    "lodash": "4.17.21",
     "node-plop": "0.26.3",
+    "notistack": "3.0.1",
     "plop": "2.7.6",
     "prettier": "2.7.1",
     "react": "18.2.0",
+    "react-ace": "10.1.0",
     "react-app-polyfill": "3.0.0",
     "react-dom": "18.2.0",
     "react-helmet-async": "1.3.0",
     "react-i18next": "11.18.6",
+    "react-icons": "4.8.0",
     "react-is": "18.2.0",
     "react-redux": "7.2.8",
     "react-router-dom": "6.3.0",
@@ -74,12 +85,9 @@
     "lint:fix": "yarn run eslint --fix src",
     "lint:css": "stylelint src/**/*.css",
     "generate": "plop --plopfile internals/generators/plopfile.ts",
-    "cleanAndSetup": "ts-node ./internals/scripts/clean.ts",
     "prettify": "prettier --write",
-    "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "extract-messages": "i18next-scanner --config=internals/extractMessages/i18next-scanner.config.js",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -121,5 +129,9 @@
         "statements": 90
       }
     }
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.195",
+    "miragejs": "0.1.47"
   }
 }

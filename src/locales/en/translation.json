@@ -1,19 +1,54 @@
 {
-  "routingFeature": {
-    "title": "Industry-standard Routing",
-    "description": "It's natural to want to add pages (e.g. `/about`) to your application, and routing makes this possible."
+  "helmetDefaultTitle": "My Java IDE",
+  "components": {
+    "editorBar": {
+      "applicationName": "My Java IDE"
+    },
+    "promiseModal": {
+      "buttonCancelLabel": "Cancel",
+      "buttonConfirmLabel": "Confirm"
+    }
   },
-  "i18nFeature": {
-    "title": "i18n Internationalization & Pluralization",
-    "selectLanguage": "Select Language",
-    "description": "Scalable apps need to support multiple languages, easily add and support multiple languages. Change the language below to see how instantly it updates the page without refreshing."
+  "pages": {
+    "editorPage": {
+      "features": {
+        "configurations": {
+          "sectionEditor": "Text Editor",
+          "fontSizeLabel": "Font Size",
+          "textEditorThemeLabel": "Editor Theme",
+          "tabSizeLabel": "Tab Size",
+          "sectionIde": "Development Interface",
+          "modeLabel": "Mode",
+          "languageLabel": "Language",
+          "showLineNumbersLabel": "Show Line Numbers",
+          "mode": {
+            "light": "Light",
+            "dark": "Dark"
+          }
+        },
+        "editor": {
+          "placeholder": "Choose a file and start hacking :D"
+        },
+        "treeview": {
+          "projectLabel": "Project",
+          "components": {
+            "deleteFileModal": {
+              "title": "Are you sure?",
+              "content": "Confirming, the file will be permanently deleted!"
+            }
+          }
+        }
+      },
+      "helmetTitle": "Editor"
+    }
   },
-  "feedbackFeature": {
-    "title": "Instant Feedback",
-    "description": "Enjoy the best DX and code your app at the speed of thought! Your saved changes to the CSS and JS are reflected instantaneously without refreshing the page."
-  },
-  "scaffoldingFeature": {
-    "title": "Quick Scaffolding",
-    "description": "Automate the creation of components, features, routes, selectors and sagas - and their tests - right from the CLI! Avoid fighting the glue of your code and focus on your app!"
+  "pluguins": {
+    "axios": {
+      "error": {
+        "internal": {
+          "message": "An unexpected failure has occurred"
+        }
+      }
+    }
   }
 }
